@@ -5,6 +5,21 @@ document.getElementById('calculate-btn').addEventListener('click', function() {
     var c4 = parseInt(document.getElementById('c4-input').value) || 0;
     var satchel = parseInt(document.getElementById('satchel-input').value) || 0;
   
+    // Reset outputs
+    document.querySelectorAll('.output').forEach(function(output) {
+      output.textContent = '';
+    });
+  
+    if (rockets === 0 && hv === 0 && flaming === 0 && c4 === 0 && satchel === 0) {
+      alert('Please enter a quantity for at least one item.');
+      return;
+    }
+  
+    if (rockets < 0 || hv < 0 || flaming < 0 || c4 < 0 || satchel < 0) {
+      alert('Invalid input. Quantity cannot be negative.');
+      return;
+    }
+  
     document.getElementById('rockets-sulfur-output').textContent = rockets * 1400;
     document.getElementById('rockets-charcoal-output').textContent = rockets * 1950;
     document.getElementById('rockets-metal-frags-output').textContent = rockets * 100;
