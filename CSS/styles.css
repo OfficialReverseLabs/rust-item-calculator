@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #input-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  #input-section label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #input-section input[type="number"] {
+    width: 100px;
+    padding: 5px;
+  }
+  
+  #input-section button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #input-section button:hover {
+    background-color: #45a049;
+  }
+  
+  #output-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resource-requirements {
+    margin-bottom: 20px;
+  }
+  
+  .resource-requirements h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .resource-requirements p {
+    margin: 5px 0;
+  }
+  
+  
