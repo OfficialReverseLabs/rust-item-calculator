@@ -1,4 +1,13 @@
-body {
+:root {
+    --color-rocket: #4caf50;
+    --color-hv: #2196f3;
+    --color-flaming: #f44336;
+    --color-c4: #9c27b0;
+    --color-ammo: #ff9800;
+    --color-credit: #666;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
     margin: 0;
@@ -46,7 +55,7 @@ body {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #4caf50;
+    background-color: var(--color-rocket);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -76,23 +85,23 @@ body {
   
   /* Colors for specific items */
   #rockets-resources {
-    border-bottom: 2px solid #4caf50;
+    border-bottom: 2px solid var(--color-rocket);
   }
   
   #hv-resources {
-    border-bottom: 2px solid #2196f3;
+    border-bottom: 2px solid var(--color-hv);
   }
   
   #flaming-resources {
-    border-bottom: 2px solid #f44336;
+    border-bottom: 2px solid var(--color-flaming);
   }
   
   #c4-resources {
-    border-bottom: 2px solid #9c27b0;
+    border-bottom: 2px solid var(--color-c4);
   }
   
   #ammo-resources {
-    border-bottom: 2px solid #ff9800;
+    border-bottom: 2px solid var(--color-ammo);
   }
   
   /* Credits */
@@ -109,7 +118,7 @@ body {
   
   #credits-section p {
     font-size: 16px;
-    color: #666;
+    color: var(--color-credit);
     margin-bottom: 5px;
     text-align: center;
   }
@@ -119,7 +128,7 @@ body {
   }
   
   #credits-section .credit-item a {
-    color: #666;
+    color: var(--color-credit);
     text-decoration: none;
   }
   
