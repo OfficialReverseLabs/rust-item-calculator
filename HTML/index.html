@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rust Calculator</title>
-  <link rel="stylesheet" href="../CSS/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap" >
+  <link id="old-style" rel="stylesheet" href="../CSS/styles.css">
 </head>
 <body>
   <div class="container">
     <h1>Rust Calculator</h1>
-    <div id="input-section">
+    <div id="input-section" class="new-style">
       <h2>Resource Calculator</h2>
       <div class="item">
         <label for="rockets-input">Rockets:</label>
@@ -38,7 +39,7 @@
       <button id="calculate-btn">Calculate</button>
     </div>
 
-    <div id="output-section" class="resource-requirements">
+    <div id="output-section" class="resource-requirements new-style">
       <h2>Resource Requirements</h2>
       <div id="rockets-resources">
         <h3>Rockets</h3>
@@ -46,6 +47,7 @@
         <p>Charcoal: <span id="rockets-charcoal-output">0</span></p>
         <p>Metal Frags: <span id="rockets-metal-frags-output">0</span></p>
         <p>Metal Pipes: <span id="rockets-metal-pipes-output">0</span></p>
+        <p>Explosives: <span id="rockets-explosives-output">0</span></p>
       </div>
       <div id="hv-resources">
         <h3>High Velocity Rockets (HV)</h3>
@@ -69,6 +71,7 @@
         <p>Metal Frags: <span id="c4-metal-frags-output">0</span></p>
         <p>Cloth: <span id="c4-cloth-output">0</span></p>
         <p>Tech Trash: <span id="c4-tech-trash-output">0</span></p>
+        <p>Explosives: <span id="c4-explosives-output">0</span></p>
       </div>
       <div id="ammo-resources">
         <h3>Explosive 5.56 Ammo</h3>
@@ -78,6 +81,7 @@
       </div>
       <div id="satchel-resources">
         <h3>Satchel Charges</h3>
+        <p>Beancan Grenade: <span id="satchel-beancan-output">0</span></p>
         <p>Sulfur: <span id="satchel-sulfur-output">0</span></p>
         <p>Charcoal: <span id="satchel-charcoal-output">0</span></p>
         <p>Metal Frags: <span id="satchel-metal-frags-output">0</span></p>
@@ -86,7 +90,7 @@
       </div>
     </div>
 
-    <div id="credits-section">
+    <div id="credits-section" class="new-style">
       <h2>Credits</h2>
       <p>Calculator created by ReverseLabs</p>
     </div>
